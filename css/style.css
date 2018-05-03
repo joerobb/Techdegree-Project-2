@@ -1,0 +1,72 @@
+/* =================================
+  Base Element Styles
+==================================== */
+
+* {box-sizing: border-box;
+}
+body {
+  font-family: 'Raleway', sans-serif;
+	line-height: 1.6;
+	color: dimgrey;
+}
+
+a {
+	color: #fff;
+	text-decoration: none;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+ul {
+background-colour: white;
+
+
+}
+
+img {
+  max-width: 100%
+}
+
+/* =================================
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+
+
+
+/* ---- Layout Containers ---- */
+
+.container {
+ padding-left: 1em;
+ padding-right: 1em;
+ text-align: center;
+ background-color: whitesmoke;
+ margin: 0;
+ }
+
+.main-header {
+	background-color: whitesmoke;
+  width: 100%;
+  text-align: center;
+  margin-top: 0,
+}
+
+.main-footer {
+	background-color: gainsboro;
+  width: 100%;
+  text-align: center;
+}
+
+/* ---- Page Elements ---- */
+
+/* =================================
+  Media Queries
+==================================== */
+
+@media (min-width:768px) {
+
+}
