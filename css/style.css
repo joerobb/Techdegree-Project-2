@@ -17,12 +17,17 @@ a {
 
 h1 {
   margin-top: 0;
+  font-weight: bold;
 }
 
-ul {
+p {
+	font-size: 1.2em;
+	margin-bottom: 1.8em;
+}
+
+li {
 background-colour: white;
-
-
+margin-bottom: 10px;
 }
 
 img {
@@ -35,33 +40,121 @@ img {
 
 /* ---- Navigation ---- */
 
+.name {
+font-size: 3em;
+font-weight: bold;
+margin: 0;
+}
+
+.main-nav {
+margin-top: 5px;
+}
+
+.main-nav li {
+  background-color: white;
+  margin: 0.5em 0.5em;
+	font-size: 1.5em;
+	text-transform: uppercase;
+}
+
+.main-nav li:hover {
+	color: #093a58;
+}
+
+.name a,
+.main-nav li {
+	text-align: center;
+  display: block;
+  padding: 10px 15px;
+}
+
+.main-foot {
+  padding-top: 20px;
+  padding-bottom: 50px;
+  font-size: 20px;
+  text-align: center;
+  border-bottom: 1px solid lightgrey;
+  width: 100%;
+
+}
+
 
 
 
 /* ---- Layout Containers ---- */
 
+.banner {
+  background-color: whitesmoke;
+  padding-top: 50px;
+  padding-bottom: 40px;
+  margin-bottom: 50px;
+  padding-left: 3em;
+  padding-right: 3em;
+}
+
+.banner,
+.main-footer {
+  text-align: center;
+}
+
 .container {
  padding-left: 1em;
  padding-right: 1em;
  text-align: center;
- background-color: whitesmoke;
- margin: 0;
+ margin: auto;
  }
 
 .main-header {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
 	background-color: whitesmoke;
   width: 100%;
   text-align: center;
-  margin-top: 0,
+}
+
+.col {
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-bottom: 40px;
 }
 
 .main-footer {
-	background-color: gainsboro;
+	background-color: whitesmoke;
   width: 100%;
   text-align: center;
+  padding-top: 40px;
+  overflow:hidden;
+
 }
 
 /* ---- Page Elements ---- */
+.portfolio {
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-bottom: 50px;
+}
+.contact {
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-bottom: 25px;
+}
+
+.joe,
+.top {
+  width: 46.5%
+}
+
+.joe {
+  float:left;
+}
+
+.top {
+  float:right;
+}
+
+
+
+
 
 /* =================================
   Media Queries
