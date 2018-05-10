@@ -87,7 +87,7 @@ margin-top: 5px;
   background-color: whitesmoke;
   padding-top: 50px;
   padding-bottom: 40px;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   padding-left: 3em;
   padding-right: 3em;
 }
@@ -131,12 +131,20 @@ margin-top: 5px;
 .portfolio {
   text-transform: uppercase;
   font-weight: bold;
-  padding-bottom: 50px;
+  padding-bottom: 20px;
 }
 .contact {
   text-transform: uppercase;
   font-weight: bold;
   padding-bottom: 25px;
+  text-align:center;
+}
+
+.interest {
+font-weight: normal;
+padding-left: 40px;
+padding-right: 40px;
+
 }
 
 .joe,
@@ -152,6 +160,10 @@ margin-top: 5px;
   float:right;
 }
 
+.foot-nav {
+  display:none;
+}
+
 
 
 
@@ -161,5 +173,60 @@ margin-top: 5px;
 ==================================== */
 
 @media (min-width:768px) {
+
+  .container {
+    width:90%;
+    margin: 0 auto;
+  }
+
+  .main-nav li {
+    display:inline-block;
+    margin-left: 15px;
+    background-color: inherit;
+  }
+
+.info,
+.pic {
+width:46.5%;
+}
+
+.info {
+  float:left;
+}
+
+.pic {
+  float:right;
+}
+
+.clearfix::after{
+  content:"";
+  display:table;
+  clear:both;
+}
+
+.col {
+  display: inline-block;
+  width: 50%;
+  margin-right: -4px;
+  vertical-align:top;
+  padding-left:1em;
+  padding-right:1em;
+}
+
+.top {
+  display:none;
+}
+
+.interest {
+font-size: 20px;
+padding-left: 60px;
+padding-right: 60px;
+
+}
+
+.foot-nav {
+display: unset;
+font-size: 10px;
+}
 
 }
