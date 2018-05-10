@@ -11,7 +11,7 @@ body {
 }
 
 a {
-	color: #fff;
+  color:dimgrey;
 	text-decoration: none;
 }
 
@@ -57,7 +57,7 @@ margin-top: 5px;
 	text-transform: uppercase;
 }
 
-.main-nav li:hover {
+.main-nav a:hover {
 	color: #093a58;
 }
 
@@ -71,10 +71,12 @@ margin-top: 5px;
 .main-foot {
   padding-top: 20px;
   padding-bottom: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
   font-size: 20px;
   text-align: center;
   border-bottom: 1px solid lightgrey;
-  width: 100%;
+  width: 95%;
 
 }
 
@@ -101,7 +103,6 @@ margin-top: 5px;
  padding-left: 1em;
  padding-right: 1em;
  text-align: center;
- margin: auto;
  }
 
 .main-header {
@@ -141,6 +142,7 @@ margin-top: 5px;
 }
 
 .interest {
+text-align: center;
 font-weight: normal;
 padding-left: 40px;
 padding-right: 40px;
@@ -149,11 +151,12 @@ padding-right: 40px;
 
 .joe,
 .top {
-  width: 46.5%
+  width: 46.5%;
 }
 
 .joe {
   float:left;
+  padding-left: 0;
 }
 
 .top {
@@ -164,9 +167,9 @@ padding-right: 40px;
   display:none;
 }
 
-
-
-
+.info {
+text-align: center;
+}
 
 /* =================================
   Media Queries
@@ -175,14 +178,18 @@ padding-right: 40px;
 @media (min-width:768px) {
 
   .container {
-    width:90%;
-    margin: 0 auto;
+    width:100%;
+  }
+
+  .name {
+  margin-bottom: -20px;
   }
 
   .main-nav li {
     display:inline-block;
     margin-left: 15px;
     background-color: inherit;
+    margin-bottom: -20px;
   }
 
 .info,
@@ -192,6 +199,9 @@ width:46.5%;
 
 .info {
   float:left;
+  text-align: left;
+  padding-top: -25px;
+  margin-top: -25px;
 }
 
 .pic {
@@ -213,20 +223,105 @@ width:46.5%;
   padding-right:1em;
 }
 
+.joe {
+  text-align: left;
+  padding-left: 40px;
+}
+
 .top {
   display:none;
 }
 
 .interest {
 font-size: 20px;
-padding-left: 60px;
-padding-right: 60px;
+padding-left: 160px;
+padding-right: 160px;
 
 }
 
 .foot-nav {
 display: unset;
 font-size: 10px;
+text-align: right;
+
 }
+
+@media (min-width:1024px) {
+
+body {
+background-color: whitesmoke;
+}
+
+.name,
+.main-nav {
+  display:inline-block;
+  width: 48%;
+  vertical-align:top;
+  padding-left:1em;
+  margin-bottom: -35px;
+}
+
+.main-nav {
+font-size: 10px;
+text-align: right;
+}
+
+.name {
+text-align: left;
+padding-left: 25px;
+}
+
+.info,
+.pic {
+  display:inline-block;
+  width: 46%;
+  vertical-align:top;
+  padding-left:1em;
+  margin-bottom: -35px;
+  padding-bottom: 40px;
+}
+
+.pic {
+text-align: right;
+}
+
+.info {
+text-align: left;
+padding-left: 1px;
+}
+
+  .primary {
+    display: inline-block;
+    width: 33%;
+    vertical-align:top;
+    padding-left:1em;
+    padding-right:1em;
+  }
+
+  .secondary {
+    display: inline-block;
+    width: 33%;
+    vertical-align:top;
+    padding-left:1em;
+    padding-right:1em;
+  }
+
+  .container {
+  width:97%;
+  padding-top: 40px;
+  padding-bottom:40px;
+  margin-left: 18px;
+  margin-right: 20px;
+  background-color: white;
+  }
+
+  .interest {
+  text-align: center;
+  font-weight: normal;
+  padding-left: 250px;
+  padding-right: 250px;
+
+  }
+
 
 }
