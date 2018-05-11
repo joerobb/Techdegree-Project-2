@@ -7,11 +7,11 @@
 body {
   font-family: 'Raleway', sans-serif;
 	line-height: 1.6;
-	color: dimgrey;
+	color: #696969;
 }
 
 a {
-  color:dimgrey;
+  color:#696969;
 	text-decoration: none;
 }
 
@@ -26,7 +26,6 @@ p {
 }
 
 li {
-background-colour: white;
 margin-bottom: 10px;
 }
 
@@ -75,7 +74,7 @@ margin-top: 5px;
   margin-right: 20px;
   font-size: 20px;
   text-align: center;
-  border-bottom: 1px solid lightgrey;
+  border-bottom: 1px solid #D3D3D3;
   width: 95%;
 
 }
@@ -86,7 +85,7 @@ margin-top: 5px;
 /* ---- Layout Containers ---- */
 
 .banner {
-  background-color: whitesmoke;
+  background-color: #F5F5F5;
   padding-top: 50px;
   padding-bottom: 40px;
   margin-bottom: 40px;
@@ -108,7 +107,7 @@ margin-top: 5px;
 .main-header {
   padding-top: 0.5em;
   padding-bottom: 0.5em;
-	background-color: whitesmoke;
+	background-color: #F5F5F5;
   width: 100%;
   text-align: center;
 }
@@ -120,7 +119,7 @@ margin-top: 5px;
 }
 
 .main-footer {
-	background-color: whitesmoke;
+	background-color: #F5F5F5;
   width: 100%;
   text-align: center;
   padding-top: 40px;
@@ -175,22 +174,23 @@ text-align: center;
   Media Queries
 ==================================== */
 
-@media (min-width:768px) {
+@media screen and (min-width:768px) {
 
-  .container {
-    width:100%;
-  }
+.container {
+width:100%;
+}
 
-  .name {
-  margin-bottom: -20px;
-  }
+.name {
+margin-bottom:-20px;
+}
 
-  .main-nav li {
-    display:inline-block;
-    margin-left: 15px;
-    background-color: inherit;
-    margin-bottom: -20px;
-  }
+.main-nav li {
+display:inline-block;
+margin-left: 15px;
+background-color: inherit;
+margin-bottom: -20px;
+font-size: 15px;
+}
 
 .info,
 .pic {
@@ -198,38 +198,48 @@ width:46.5%;
 }
 
 .info {
-  float:left;
-  text-align: left;
-  padding-top: -25px;
-  margin-top: -25px;
+float:left;
+text-align: left;
+margin-top: -25px;
 }
 
 .pic {
-  float:right;
+float:right;
 }
 
-.clearfix::after{
-  content:"";
-  display:table;
-  clear:both;
+.clearfix::after {
+content:"";
+display:table;
+clear:both;
 }
 
 .col {
-  display: inline-block;
-  width: 50%;
-  margin-right: -4px;
-  vertical-align:top;
-  padding-left:1em;
-  padding-right:1em;
+display: inline-block;
+width: 50%;
+margin-right: -4px;
+vertical-align:top;
+padding-left:1em;
+padding-right:1em;
 }
 
+.joe,
+.main-nav  {
+display:inline-block;
+margin-left: 15px;
+background-color: inherit;
+font-size: 15px;
+padding-bottom: 20px;
+}
+
+
 .joe {
-  text-align: left;
-  padding-left: 40px;
+text-align: left;
+padding-left: 40px;
+font-size: 20px;
 }
 
 .top {
-  display:none;
+display:none;
 }
 
 .interest {
@@ -240,25 +250,24 @@ padding-right: 160px;
 }
 
 .foot-nav {
-display: unset;
-font-size: 10px;
+font-size: 15px;
 text-align: right;
-
+}
 }
 
-@media (min-width:1024px) {
+@media screen and (min-width:1024px) {
 
 body {
-background-color: whitesmoke;
+background-color: #F5F5F5;
 }
 
 .name,
 .main-nav {
-  display:inline-block;
-  width: 48%;
-  vertical-align:top;
-  padding-left:1em;
-  margin-bottom: -35px;
+display:inline-block;
+width: 48%;
+vertical-align:top;
+padding-left:1em;
+margin-bottom: -35px;
 }
 
 .main-nav {
@@ -273,12 +282,12 @@ padding-left: 25px;
 
 .info,
 .pic {
-  display:inline-block;
-  width: 46%;
-  vertical-align:top;
-  padding-left:1em;
-  margin-bottom: -35px;
-  padding-bottom: 40px;
+display:inline-block;
+width: 46%;
+vertical-align:top;
+padding-left:1em;
+margin-bottom: -35px;
+padding-bottom: 40px;
 }
 
 .pic {
@@ -290,38 +299,36 @@ text-align: left;
 padding-left: 1px;
 }
 
-  .primary {
-    display: inline-block;
-    width: 33%;
-    vertical-align:top;
-    padding-left:1em;
-    padding-right:1em;
-  }
+.primary {
+display: inline-block;
+width: 33%;
+vertical-align:top;
+padding-left:1em;
+padding-right:1em;
+}
 
-  .secondary {
-    display: inline-block;
-    width: 33%;
-    vertical-align:top;
-    padding-left:1em;
-    padding-right:1em;
-  }
+.secondary {
+display: inline-block;
+width: 33%;
+vertical-align:top;
+padding-left:1em;
+padding-right:1em;
+}
 
-  .container {
-  width:97%;
-  padding-top: 40px;
-  padding-bottom:40px;
-  margin-left: 18px;
-  margin-right: 20px;
-  background-color: white;
-  }
+.container {
+width:97%;
+padding-top: 40px;
+padding-bottom:40px;
+margin-left: 18px;
+margin-right: 20px;
+background-color: white;
+}
 
-  .interest {
-  text-align: center;
-  font-weight: normal;
-  padding-left: 250px;
-  padding-right: 250px;
-
-  }
-
+.interest {
+text-align: center;
+font-weight: normal;
+padding-left: 250px;
+padding-right: 250px;
+}
 
 }
